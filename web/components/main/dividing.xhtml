@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xml:lang="fa"
+      lang="fa">
+
+<f:view>
+    <h:head>
+        <title><ui:insert name="title"/></title>
+    </h:head>
+    <h:body>
+        <style type="text/css">
+
+            .column {
+                float: right;
+                position: relative;
+                margin: 5px;
+                direction: rtl;
+                font-family: BKamran;
+                text-align: center;
+                word-wrap: break-word;
+            }
+
+            /*#rightSide {*/
+                /*float: right;*/
+                /*position: relative;*/
+                /*margin: 5px;*/
+            /*}*/
+
+            @font-face {
+
+                font-family: BKamran;
+
+                src: local(BKamran), url('/resources/fonts/BKamran.ttf') format('opentype');
+
+            }
+        </style>
+
+        <div class="column" id="rightSide" style="width: 7cm">
+            <div>
+                <ui:insert name="r_Header"/>
+            </div>
+            <div>
+                <ui:insert name="r_Content"/>
+            </div>
+        </div>
+        <h:column>
+            <div class="column" id="mainContent" style="min-width: 60%;">
+                <div>
+                    <ui:insert name="center_Header"/>
+                </div>
+
+                <div style="font-family: BKamran">
+                    <ui:insert name="center_Content"/>
+                </div>
+            </div>
+        </h:column>
+
+        <div class="column" id="leftSide" style="max-width: 7cm">
+            <div>
+                <ui:insert name="l_Header"/>
+            </div>
+            <div>
+                <ui:insert name="l_Content"/>
+            </div>
+
+        </div>
+    </h:body>
+</f:view>
+</html>
+
