@@ -24,21 +24,16 @@
                 word-wrap: break-word;
             }
 
-            /*#rightSide {*/
-                /*float: right;*/
-                /*position: relative;*/
-                /*margin: 5px;*/
-            /*}*/
-
             @font-face {
-
                 font-family: BKamran;
-
                 src: local(BKamran), url('/resources/fonts/BKamran.ttf') format('opentype');
-
             }
         </style>
-
+        <!--Header-->
+        <div >
+            <ui:insert name="headre"></ui:insert>
+        </div>
+        <!--Right side-->
         <div class="column" id="rightSide" style="width: 9cm">
             <div>
                 <ui:insert name="r_Header"/>
@@ -47,6 +42,7 @@
                 <ui:insert name="r_Content"/>
             </div>
         </div>
+        <!--Content-->
         <h:column>
             <div class="column" id="mainContent" style="min-width: 65%;">
                 <div>
@@ -58,7 +54,7 @@
                 </div>
             </div>
         </h:column>
-
+        <!--Left side-->
         <div class="column" id="leftSide" style="max-width: 9cm">
             <div>
                 <ui:insert name="l_Header"/>
@@ -67,6 +63,10 @@
                 <ui:insert name="l_Content"/>
             </div>
 
+        </div>
+        <!--Footer-->
+        <div >
+            <ui:insert name="footer"></ui:insert>
         </div>
     </h:body>
 </f:view>
