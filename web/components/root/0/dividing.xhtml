@@ -11,10 +11,26 @@
     <h:head>
         <title><ui:insert name="title"/></title>
     </h:head>
-    <h:body>
+    <h:body style="background-color: #{bgColor};border-radius: 15px;">
         <style type="text/css">
 
+            .header{
+                font-weight: bolder;
+                text-align: right;
+                margin: 10px;
+            }
+            .part{
+                text-align: center;
+                clear: both;
+                width: 100%;
+                direction: rtl;
+                background-color: mintcream;
+                margin: 5px;
+                border-radius: 15px;
+            }
             .column {
+                border-radius: 15px;
+                background-color: mintcream;
                 float: right;
                 position: relative;
                 margin: 5px;
@@ -30,12 +46,12 @@
             }
         </style>
         <!--Header-->
-        <div >
+        <div class="part">
             <ui:insert name="headre"></ui:insert>
         </div>
         <!--Right side-->
-        <div class="column" id="rightSide" style="width: 9cm">
-            <div>
+        <div class="column" id="rightSide" style="width: 7cm">
+            <div class="header">
                 <ui:insert name="r_Header"/>
             </div>
             <div>
@@ -44,19 +60,19 @@
         </div>
         <!--Content-->
         <h:column>
-            <div class="column" id="mainContent" style="min-width: 65%;">
-                <div>
+            <div class="column" id="mainContent" style="min-width: 58%;font-family: BKamran">
+                <div class="header">
                     <ui:insert name="center_Header"/>
                 </div>
 
-                <div style="font-family: BKamran">
+                <div>
                     <ui:insert name="center_Content"/>
                 </div>
             </div>
         </h:column>
         <!--Left side-->
-        <div class="column" id="leftSide" style="max-width: 9cm">
-            <div>
+        <div class="column" id="leftSide" style="width: 7cm">
+            <div class="header">
                 <ui:insert name="l_Header"/>
             </div>
             <div>
@@ -65,8 +81,12 @@
 
         </div>
         <!--Footer-->
-        <div >
+        <div class="part">
             <ui:insert name="footer"></ui:insert>
+        </div>
+
+        <div style="font-family: BKamran;direction: rtl;text-align: center">
+            تمامی حقوق متعلق به سایت ----- می باشد.
         </div>
     </h:body>
 </f:view>

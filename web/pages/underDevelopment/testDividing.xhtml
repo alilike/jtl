@@ -2,25 +2,39 @@
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:p="http://primefaces.org/ui"
-                template="/components/root/0/dividing.xhtml" >
+                template="/components/root/0/dividing.xhtml">
+
+    <ui:param name="bgColor" value="#ff00c1"></ui:param>
 
 
     <ui:define name="title">hello</ui:define>
 
+    <ui:define name="headre">
+        Just a Header
+    </ui:define>
 
     <ui:define name="r_Header">
-        به نام خدا
+        right side header
     </ui:define>
     <ui:define name="r_Content">
-        rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+        right side content
     </ui:define>
     <ui:define name="center_Content">
-        من علی هستم
-        <br></br>
-        sfasfsf
-
+        center content
+    </ui:define>
+    <ui:define name="center_Header">
+        center header
     </ui:define>
     <ui:define name="l_Header">
-        llllllllllllllllllllllllllllllll
+        left side header
     </ui:define>
+    <ui:define name="l_Content">
+        left side content
+    </ui:define>
+
+    <ui:define name="footer">
+        Just a Footer
+    </ui:define>
+
+
 </ui:composition>
