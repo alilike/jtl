@@ -22,7 +22,7 @@
             .part{
                 text-align: center;
                 clear: both;
-                width: 100%;
+
                 direction: rtl;
                 background-color: mintcream;
                 margin: 5px;
@@ -49,6 +49,12 @@
         <div class="part">
             <ui:insert name="headre"></ui:insert>
         </div>
+        <!--Menu Bar-->
+        <div >
+            <ui:include src="/components/menu-bar/first/first-menu.xhtml"></ui:include>
+        </div>
+        <!--Separating menu bar from right side-->
+        <div style="clear: both"></div>
         <!--Right side-->
         <div class="column" id="rightSide" style="width: 7cm">
             <div class="header">
