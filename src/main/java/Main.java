@@ -10,12 +10,10 @@ import org.hibernate.service.ServiceRegistryBuilder;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
  * User: ali
  * Date: 10/13/13
  * Time: 10:48 PM
- * To change this template use File | Settings | File Templates.
- */
+*/
 public class Main {
     private static final SessionFactory ourSessionFactory;
     private static final ServiceRegistry serviceRegistry;
